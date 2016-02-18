@@ -5,12 +5,12 @@
 def find_integer_with_most_divisors(input_list):
 
     calc_number = input_list.pop(0)
-
-
+               
     divisors = []
     for x in range(1, calc_number+1):
         if calc_number%x==0:
             divisors.append(x)
     print(len(divisors))            
 
-find_integer_with_most_divisors([8,12,18])
+find_integer_with_most_divisors([8, 12, 18, 6])
+ 
