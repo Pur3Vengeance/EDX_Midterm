@@ -2,19 +2,19 @@
 #of all prime numbers between 2 and n but not including 2 and n.
 #A prime number is a number that has no other divisors except 1 and itself
 
-def list_of_primes(n):
+def list_of_primes(num):
 
-    for number in range(1,n+1):
+    for x in range(1,num):
 
-        divider = 1
-        primes = []
+        y = 3
 
-        if number%divider ==0:
-            primes.append(number)
-            divider = divider + 1
-        print(primes)
-
-            
+        if x%2 ==0:
+           del x
+        else:
+            for y in range(1,num):
+                if x%y ==0:
+                    del x
+        print (x)
 
 
 
