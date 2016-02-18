@@ -4,13 +4,21 @@
 
 def find_integer_with_most_divisors(input_list):
 
-    calc_number = input_list.pop(0)
-               
-    divisors = []
-    for x in range(1, calc_number+1):
-        if calc_number%x==0:
-            divisors.append(x)
-    print(len(divisors))            
+    while len(input_list)>0:
+        
+        calc_number = input_list.pop(0)
+       
+        divisors = []
+        for x in range(1, calc_number+1):
+            if calc_number%x==0:
+                divisors.append(x)
+        new_list = []
+        new_list.append(divisors)
+                   
+        print(new_list)
+        
+        
+        
 
 find_integer_with_most_divisors([8, 12, 18, 6])
  
